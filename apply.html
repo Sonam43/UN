@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply button</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <div class="container">
+        <form id="signup" class="form">
+            <h1>Apply Now</h1>
+            <div class="form-field">
+                <label for="username">Name:</label>
+                <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="enroll no">Enroll No:</label>
+                <input type="enroll no" name="enroll no" id="enroll" autocomplete="on">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="CID">CID:</label>
+                <input type="CID" name="CID" id="CID" autocomplete="on">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input class="btn" type="submit" value="Apply">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer with "Go Back" button -->
+    <footer class="footer">
+        <button onclick="goBack()"><a href="member.html">Go Back</a> </button>
+    </footer>
+
+    <script src="apply.js"></script>
+    <script>
+        // Function to go back to the previous page in history
+        function goBack() {
+            window.history.back(); // Goes back one page in history
+        }
+    </script>
+</body>
+</html>
